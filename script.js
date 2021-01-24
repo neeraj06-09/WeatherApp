@@ -31,8 +31,11 @@ function displayResults(weather){
     let date = document.querySelector('.location .date');
     date.innerText = dateBuilder(now);
 
-    let temp = document.querySelector('.current .temp');
-    temp.innerHTML = `${Math.round(weather.main.temp)}<span>&degreeC</span>`;
+    let temp2 = document.querySelector('.current .temp');
+    temp.innerHTML = `${Math.round(weather.main.temp)}`
+   
+    let temp3 = document.querySelector('.current .weather');
+    weather.innerText = `${weather.main}`;
 }
 
 function dateBuilder(d){
@@ -46,3 +49,4 @@ function dateBuilder(d){
 
     return `${day} ${date} ${month} ${year}`;
 }
+
