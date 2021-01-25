@@ -32,8 +32,8 @@ function displayResults(weather){
     date.innerText = dateBuilder(now);
 
     let temp2 = document.querySelector('.current .temp');
-    temp.innerHTML = `${Math.round(weather.main.temp)}`
-   
+    temp.innerHTML = `${Math.round(weather.main.temp)}&degC`;
+
     let weatherType = document.getElementById('weather');
     weatherType.innerHTML = `${weather.weather[0].main}`;
 }
